@@ -1,9 +1,10 @@
-//out: /Users/olafg/Desktop/Terapivakten/css/child_style.min.css, compress: true
+//out: ../css/child_style.min.css, compress: true
 // Variables
 @themeColor: #76c5bd;
 @sansSerifFont: Montserrat, Helvetica, Arial, Lucida, sans-serif;
 @serifFont: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
 @import "animation.less";
+@import "ninjaforms.less";
 @import "footer.less";
 @import "blog.less";
 @import "pricing-tables.less";
@@ -95,61 +96,9 @@ a {
     position: absolute;
     bottom: 0 !important;
 }
-/***********************************************************************
-******************** CUSTOM CSS ************************
-*********************************************************************/
-.hours-module h1 {
-    font-size: 1.6em;
-}
 
-.hours-module h2 {
-    display: inline-block;
-    font-size: 0.8em;
-}
-
-.book-now {
-    border: 1px solid;
-}
-
-#services > .et_pb_row {
-    padding-bottom: 30px;
-}
-
-.room-icon {
-    float: left;
-    width: 22%;
-    padding-left: 4%;
-    text-align: center;
-}
-
-.room-icon h4 {
-    font-size: 1em;
-}
-
-.room-icon img {
-    height: 40px;
-}
-
-.room-icon .et_pb_main_blurb_image {
-    margin-bottom: 5px;
-}
-
-.room-info {
-    padding-bottom: 15px;
-}
-
-.room-info h4 {
-    padding-bottom: 10px;
-    font-weight: bold;
-}
-
-.room-info p {
-    font-size: 1.2em;
-}
-
-.ninja-forms-field {
-    font-size: 150%;
-}
+/* hide bullets in the footer menus */
+.footer-widget li:before { display: none; }
 /*------------------------------------------------*/
 /*-----------------[CTA Menu Item]----------------*/
 /*------------------------------------------------*/
@@ -191,10 +140,6 @@ li.get-started:hover {
     }
 }
 
-#map,
-#map .et_pb_map {
-    height: 500px!important;
-}
 
 .vertical-aligner {
     display: flex;

@@ -319,6 +319,7 @@ function divi_faq_cpt() {
 		'description'           => __( 'Frequently Asked Questions', 'divi_child' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', ),
+    'taxonomies'            => array( 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
