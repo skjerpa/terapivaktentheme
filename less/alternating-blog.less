@@ -1,0 +1,104 @@
+/*Alternating blog layout*/
+/*Set the effect for screen sizes 980px and larger*/
+@media only screen and (min-width: 980px) {
+    .ds-alternating-blog .et_pb_post {
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 30px;
+}
+/*Add some hidden content to clear the floats and make our posts site on their own row*/
+.ds-alternating-blog .et_pb_post:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+.ds-alternating-blog .et_pb_post h2 {
+    margin-top: 0;
+}
+/*This sets the odd post images to the left*/
+.ds-alternating-blog .et_pb_post:nth-child(odd) img {
+    float: left !important;
+    overflow: hidden;
+    width: calc(50% + 60px);
+    height: auto;
+    padding-right: 30px;
+    margin: -30px 0 -30px -30px;
+}
+/*This sets the even post images to the right*/
+.ds-alternating-blog .et_pb_post:nth-child(even) img {
+    float: right;
+    overflow: hidden;
+    width: calc(50% + 60px);
+    height: auto;
+    padding-left: 30px;
+    margin: -30px -30px -30px 0;
+}
+/*This sets the background color of the image ready for the hover effect*/
+.ds-alternating-blog .et_pb_post img {
+    background:rgba(255,255,255,.75);
+    opacity:1;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+}
+/*This gives us the image opacity on hover*/
+.ds-alternating-blog .et_pb_post img:hover {
+    opacity: .5;
+}
+/*This aligns the post text to the right on even posts*/
+.ds-alternating-blog .et_pb_post:nth-child(even) {
+    text-align: right;
+}
+
+/*This sets the position of read more button on odd posts*/
+.ds-alternating-blog .et_pb_post:nth-child(odd) a.more-link {
+    display: block;
+    clear: none;
+    margin-left: calc(50% + 30px);
+}
+/*This sets the position of read more button on even posts*/
+.ds-alternating-blog .et_pb_post:nth-child(even) a.more-link {
+    display: block;
+    clear: none;
+    margin-left: calc(50% - 180px);
+    }
+}
+/*This styles the read more button*/
+.ds-alternating-blog a.more-link {
+    border: 1px solid #000;
+    width: 150px;
+    color: #000;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+/*This styles the readmore button on hover*/
+.ds-alternating-blog a.more-link:hover {
+    border: 1px solid #000;
+    color: #fff !important;
+    background: #000;
+}
+/*This changes the layout to stack posts on smaller screens*/
+@media only screen and (max-width: 979px) {
+    .ds-alternating-blog .et_pb_post {
+    margin-bottom: 0;
+}
+   .ds-alternating-blog .et_pb_post a img {
+    min-width: 100%;
+}
+    .ds-alternating-blog .et_pb_post .entry-featured-image-url {
+    margin: -30px -30px 30px -30px;
+}
+    .ds-alternating-blog .et_pb_post {
+        padding: 30px;
+    }
+}
+/*This fixes a small margin issue with the post meta on small screens*/
+@media only screen and (max-width: 479px) {
+    .ds-alternating-blog .et_pb_post .post-meta {
+    margin-top: 10px;
+    }
+}

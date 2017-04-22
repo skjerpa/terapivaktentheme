@@ -1,0 +1,313 @@
+//out: /Users/olafg/Desktop/Terapivakten/css/child_style.min.css, compress: true
+// Variables
+@themeColor: #76c5bd;
+@sansSerifFont: Montserrat, Helvetica, Arial, Lucida, sans-serif;
+@serifFont: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+@import "animation.less";
+@import "footer.less";
+@import "blog.less";
+@import "pricing-tables.less";
+@import "typography.less";
+@import "alternating-blog.less";
+
+.align-center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.vertical-container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.vertical-aligner {
+max-width: 50%;
+}
+
+.card-shadow {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+a {
+    color: @themeColor;
+}
+/***********************************************************************
+******************** VERTICAL ALIGN  ************************
+*********************************************************************/
+.ds-vertical-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/*******************************************************************
+******************** RESPONSIVE LAYOUT  ************************
+******************************************************************/
+/******* Mobile Device *******/
+@media only screen and (max-width: 1023px) {
+    .cta_custom {
+        top: 5px !important;
+        position: relative;
+    }
+}
+/******* Desktop *******/
+@media only screen and (min-width: 1024px) {
+    .cta_custom {
+        top: 35px !important;
+        position: relative;
+    }
+}
+/******* Large Screen, Mac 24' ---> *******/
+@media only screen and (min-width: 1600px) {
+    .cta_custom.et_pb_promo {
+        padding-top: 18% !important;
+    }
+}
+/***********************************************************************
+******************** SOCIAL MEDIA CONTACT  ************************
+*********************************************************************/
+.social_media_custom_1.et_pb_social_media_follow {
+    right: 75% !important;
+}
+
+.social_media_custom_2.et_pb_social_media_follow {
+    right: 50% !important;
+}
+
+.social_media_custom_3.et_pb_social_media_follow {
+    right: 25% !important;
+}
+
+.social_media_custom_4.et_pb_social_media_follow {
+    right: 0 !important;
+}
+
+.social_media_custom_1,
+.social_media_custom_2,
+.social_media_custom_3,
+.social_media_custom_4 {
+    margin-bottom: 0 !important;
+    background-color: #01d6c4;
+    /* <-------- Customize here the Background-color */
+    padding: 5px 5px 0 15px !important;
+    position: absolute;
+    bottom: 0 !important;
+}
+/***********************************************************************
+******************** CUSTOM CSS ************************
+*********************************************************************/
+.hours-module h1 {
+    font-size: 1.6em;
+}
+
+.hours-module h2 {
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+.book-now {
+    border: 1px solid;
+}
+
+#services > .et_pb_row {
+    padding-bottom: 30px;
+}
+
+.room-icon {
+    float: left;
+    width: 22%;
+    padding-left: 4%;
+    text-align: center;
+}
+
+.room-icon h4 {
+    font-size: 1em;
+}
+
+.room-icon img {
+    height: 40px;
+}
+
+.room-icon .et_pb_main_blurb_image {
+    margin-bottom: 5px;
+}
+
+.room-info {
+    padding-bottom: 15px;
+}
+
+.room-info h4 {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.room-info p {
+    font-size: 1.2em;
+}
+
+.ninja-forms-field {
+    font-size: 150%;
+}
+/*------------------------------------------------*/
+/*-----------------[CTA Menu Item]----------------*/
+/*------------------------------------------------*/
+/* style the get started cta button */
+.get-started {
+    border-radius: 0;
+}
+
+.get-started a {
+    color: #fff!important;
+}
+
+li.get-started {
+    background-color: #ed7818;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px !important;
+    border-radius: 3px;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+li.get-started:hover {
+    background-color: #c96310;
+}
+/* fixed header button text color */
+.et-fixed-header #top-menu .get-started a {
+    color: #fff!important;
+}
+
+.get-started li.current-menu-ancestor > a,
+.get-started li.current-menu-item > a {
+    color: #fff !important;
+}
+@media only screen and (min-width: 981px) {
+    li.get-started {
+        height: 33px;
+    }
+}
+
+#map,
+#map .et_pb_map {
+    height: 500px!important;
+}
+
+.vertical-aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aligner-item {
+    max-width: 50%;
+}
+
+.contrast-bg {
+    background-color: #f9f9f9;
+}
+
+blockquote {
+    border-left: none;
+    padding-left: 0;
+    font-size: 170%;
+    line-height: 1.8em;
+    border-top: 1px solid #e2e0e0;
+    border-bottom: 1px solid #e2e0e0;
+    padding: 1em 0;
+    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+blockquote > p:after,
+blockquote > p:before {
+    content: '"';
+}
+
+.entry-content h1,
+.et_pb_title_container h1.entry-title,
+h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 220%;
+}
+
+.et_pb_title_meta_container {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.entry-content h1,
+.et_pb_title_container h1.entry-title {
+    font-size: 200%+180%;
+}
+
+.sb_cpt_term_list > a {
+    background-color: @themeColor;
+    padding: 10px;
+    margin-right: 10px;
+    color: #FFF;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.sb_cpt_term_list > a:before {
+    content: "#";
+}
+
+#cta-quote {
+    background-color: @themeColor;
+    font-family: @serifFont;
+}
+
+#cta-quote img {
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+#cta .et_pb_code svg {
+  fill: #FFF;
+    max-width: 200px;
+    .align-center;
+}
+
+#clickboxes article.et_pb_post_type {
+  border-bottom: 2px solid #e9edf5;
+  padding: 1em 0em 1em 0em;
+}
+
+#clickboxes article.et_pb_post_type:hover {
+background-color: #FBFCFD;
+}
+
+#clickboxes article.et_pb_post {
+  margin-bottom: 0px;
+}
+
+#clickboxes h2.entry-title {
+  text-transform: none;
+}
+
+
+
+span.et_pb_fullwidth_header_subhead {
+    font-size: 200%;
+    font-weight: 800;
+    padding: 15px 0;
+}
+
+div.header-content > p {
+    font-size: 120%;
+}
+
+body a.et_pb_button {
+    background-color: @themeColor;
+    color: #FFF;
+}
+
+#blog-header h1 {
+  margin-top: 100px;
+}
